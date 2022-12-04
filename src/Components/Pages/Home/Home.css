@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*----------------------- Header  ---------------------------*/
+
+header {
+    height: 60px;
+    background-color: rgb(238, 238, 238);
+}
+
+header nav {
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav ul {
+    margin: 0 2rem;
+    align-items: center;
+    display: flex;
+}
+
+.greencolorheader {
+    color: rgb(1, 135, 98);
+}
+
+header nav ul li {
+    font-size: 1.1rem;
+    margin: 0.8rem 1rem;
+}
+
+header nav ul li a {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/*----------------------- Main  ---------------------------*/
+
+.welcome-description-wrapper {
+    margin: 3rem; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.welcome-text {
+    width: 475px;
+}
+
+.welcome-text h1 {
+    font-size: 3rem;
+    color: rgb(34, 34, 34);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.description-text-button p {
+    font-size: 1.7rem;
+    color: rgb(85, 85, 85);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 2rem 0;
+}
+
+.description-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description-button button:nth-of-type(1) {
+    cursor: pointer;
+    border: 0;
+    font-size: 1.1rem;
+    width: 200px;
+    font-weight: 600;
+    color: white;
+    border-radius: 0.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.8rem 1rem;
+    background-color: rgb(1, 135, 98);
+}
+
+.description-button button:hover {
+    opacity: 0.7;
+}
+
+.description-button button:nth-of-type(2) {
+    cursor: pointer;
+    border: 2px solid rgb(1, 135, 98);
+    font-size: 1.1rem;
+    width: 200px;
+    font-weight: 600;
+    color: rgb(1, 135, 98);
+    border-radius: 0.6rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.8rem 1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+/*----------------------- Footer  ---------------------------*/
+
+.hr {
+    margin: -1rem auto;
+    width: 95%;
+    background-color: rgba(1, 135, 97, 0.281);
+    height: 1px;
+}
+
+.icon-links-text {
+    margin: 0rem; 
+}
+
+.boldfooter {
+    font-weight: bold;
+}
+
+.textlinks a {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 2rem 0 0;
+}
+
+.textlinks a:hover {
+    opacity: 0.7;
+}
+
+.iconslinks {
+    margin: 2rem 0;
+}
+
+.iconslinks i {
+    color: rgb(1, 135, 98);
+    font-size: 2rem;
+}
+
+.icon-links-text p {
+    font-size: 0.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.iconslinks i:hover {
+    opacity: 0.7;
+}
+
+.tdnone {
+    color: currentColor;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1125px) {
+
+    .welcome-description-wrapper {
+        justify-content: center;
+    }
+
+    .welcome-text h1 {
+        font-size: 2.3rem;
+        color: rgb(34, 34, 34);
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+    }
+
+    .description-text-button p {
+        font-size: 1rem;
+        color: rgb(85, 85, 85);
+        font-family: 'Source Sans Pro', sans-serif;
+        margin: 2rem 0;
+    }
+
+}
+
+@media screen and (max-width: 565px) {
+
+    header {
+        margin: 0 0 4rem 0;
+        background-color: rgb(238, 238, 238);
+    }
+
+    header nav {
+        padding: 1rem;
+        background-color: rgb(238, 238, 238);
+        display: flex;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        text-align: center;
+        margin: 0;
+        justify-content: center;
+    }
+
+    header nav ul:nth-of-type(1) li h1  {
+        margin: -1.3rem 0 0 0;
+        font-size: 2.2rem;
+    }
+
+    header nav ul:nth-of-type(2) li  {
+        margin: 0 1rem 0 0;
+    }
+
+    /*---------------------*/
+
+    .welcome-description-wrapper {
+        justify-content: center;
+    }
+
+    .welcome-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .description-button {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .description-button button {
+        margin: 0.5rem;
+    }
+
+    .welcome-img img {
+        width: 100%;
+    }
+
+    /*---------------------*/
+
+    .icon-links-text {
+        margin: 1rem; 
+    }
+
+    .textlinks nav  {
+        flex-direction: column;
+        display: flex;
+    }
+
+}

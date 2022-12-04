@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*----------------------- Header  ---------------------------*/
+
+header {
+    height: 60px;
+    background-color: rgb(238, 238, 238);
+}
+
+header nav {
+    justify-content: space-between;
+    display: flex;
+}
+
+header nav ul {
+    margin: 0 2rem;
+    align-items: center;
+    display: flex;
+}
+
+.greencolorheader {
+    color: rgb(1, 135, 98);
+}
+
+header nav ul li {
+    font-size: 1.1rem;
+    margin: 0.8rem 1rem;
+}
+
+header nav ul li a {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/*----------------------- Main  ---------------------------*/
+
+.professional-wrapper {
+    margin: 3rem; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+}
+
+.professional-description {
+    width: 510px;
+}
+
+.professional-name h1 {
+    margin: 0 0 2.5rem 0;
+    font-size: 3rem;
+    color: rgb(34, 34, 34);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.professional-description h2 {
+    padding: 0.2rem 1rem;
+    border-left: 0.35rem solid rgb(1, 135, 98);
+    font-size: 1.6rem;
+    color: rgb(70, 70, 70);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:initial;
+}
+
+/*----------------------- Footer  ---------------------------*/
+
+.hr {
+    margin: -1rem auto;
+    width: 95%;
+    background-color: rgba(1, 135, 97, 0.281);
+    height: 1px;
+}
+
+.icon-links-text {
+    margin: 3rem 3rem; 
+}
+
+.boldfooter {
+    font-weight: bold;
+}
+
+.textlinks a {
+    color: rgb(49, 49, 49);
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0 2rem 0 0;
+}
+
+.textlinks a:hover {
+    opacity: 0.7;
+}
+
+.iconslinks {
+    margin: 2rem 0;
+}
+
+.iconslinks a:nth-of-type(1) {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.iconslinks a {
+    margin: 1rem;
+}
+
+.iconslinks i {
+    color: rgb(1, 135, 98);
+    font-size: 2rem;
+}
+
+.icon-links-text p {
+    font-size: 0.8rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.iconslinks i:hover {
+    opacity: 0.7;
+}
+
+.tdnone {
+    color: currentColor;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .person-usuary-name h1 {
+        font-size: 2rem;
+    }
+
+    .person-usuary-img img {
+        margin: 3rem 0;
+        width: 90%;
+    }
+    
+    .icon-links-text {
+        margin: 1rem; 
+    }
+
+    .iconslinks i {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 1121px) {
+    .professional-wrapper {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    
+    .professional-name h1 {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    .professional-description h2 {
+        font-size: 1.050rem;
+    }
+
+    .textlinks {
+        margin: 3rem 0 0 0;
+    }
+
+}
